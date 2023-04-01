@@ -21,9 +21,7 @@ export default function Home() {
       <Hero />
       <LogoGrid />
       <CenteredCTAText />
-      <Stats />
       <LogoGrid2 />
-      <CTA />
       <Features />
       <FAQs />
       <FooterCTA />

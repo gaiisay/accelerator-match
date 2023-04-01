@@ -10,7 +10,7 @@ const Hero = () => (
       <div className="space-y-5 max-w-4xl mx-auto text-center">
         <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
           Accelerator Applications{" "}
-          <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#0ba360] to-[#3cba92]">
+          <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#07A9B6] to-[#3cba92]">
             on auto-pilot
           </span>
         </h1>
@@ -21,7 +21,7 @@ const Hero = () => (
         <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
           <NavLink
             href="/pricing"
-            className="flex items-center gap-x-2 text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 "
+            className="flex items-center gap-x-2 text-white bg-logo hover:bg-blue-500 active:bg-blue-700"
           >
             Free Startup Signup
             <svg
@@ -56,6 +56,11 @@ const Hero = () => (
               />
             </svg>
           </NavLink>
+        </div>
+        <div className="max-w-xl mx-auto flex gap-6 justify-center">
+          <span>✌️ 100% Free</span>
+          <span>👩‍💻 2-Minutes Sign-Up</span>
+          <span>🚀 Top Accelerators</span>
         </div>
       </div>
     </GradientWrapper>
