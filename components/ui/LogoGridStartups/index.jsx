@@ -24,7 +24,7 @@ const logos = [
   },
 ];
 
-const LogoGrid2 = () => (
+const LogoGridStartups = () => (
   <SectionWrapper>
     <div className="custom-screen">
       <h2 className="font-semibold text-sm text-gray-800 text-center">
@@ -43,4 +43,4 @@ const LogoGrid2 = () => (
   </SectionWrapper>
 );
 
-export default LogoGrid2;
+export default LogoGridStartups;

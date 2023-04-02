@@ -10,7 +10,7 @@ const Hero = () => (
       <div className="space-y-5 max-w-4xl mx-auto text-center">
         <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
           Accelerator Applications{" "}
-          <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#07A9B6] to-[#3cba92]">
+          <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#3cba92] to-[#07A9B6]">
             on auto-pilot
           </span>
         </h1>
@@ -20,7 +20,7 @@ const Hero = () => (
         </p>
         <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
           <NavLink
-            href="/pricing"
+            href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
             className="flex items-center gap-x-2 text-white bg-logo hover:bg-blue-500 active:bg-blue-700"
           >
             Free Startup Signup
@@ -38,7 +38,7 @@ const Hero = () => (
             </svg>
           </NavLink>
           <NavLink
-            href="#cta"
+            href="#features"
             className="flex items-center gap-x-2 text-gray-700 hover:text-gray-900"
             scroll={false}
           >
