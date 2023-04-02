@@ -26,15 +26,15 @@ const logos = [
 
 const LogoGridStartups = () => (
   <SectionWrapper>
-    <div className="custom-screen">
+    <div className="custom-screen sm:mb-16">
       <h2 className="font-semibold text-sm text-gray-800 text-center">
         Some of our Startups
       </h2>
       <div className="mt-8 flex justify-center">
-        <ul className="inline-grid grid-cols-2 items-center justify-items-center gap-x-10 gap-y-8 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
+        <ul className="inline-grid grid-cols-2 items-center justify-items-center gap-x-10 gap-y-8 md:gap-x-16 md:grid-cols-4 lg:grid-cols-4">
           {logos.map((item, idx) => (
             <li key={idx}>
-              <Image src={item.src} alt={item.alt} width={200} />
+              <Image src={item.src} alt={item.alt} height={120} />
             </li>
           ))}
         </ul>

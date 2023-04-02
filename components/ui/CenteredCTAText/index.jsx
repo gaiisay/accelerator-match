@@ -7,7 +7,7 @@ const stats = [
   },
   {
     data: "3x",
-    desc: "Accelerator alumni have 3 times higher survival chances",
+    desc: "Accelerator alumni have 3 times higher survival chances.",
   },
   {
     data: "8x",
@@ -41,12 +41,12 @@ const CenteredCTAText = () => {
             </p>
           </div>
         </div>
-        <div className="my-auto mx-auto max-w-xl lg:w-1/2 xs:w-full">
+        <div className="my-auto mx-4 sm:mx-auto max-w-xl lg:w-1/2 xs:w-full">
           <ul className="flex-wrap gap-x-12 gap-y-10 items-center space-y-8 sm:space-y-0 sm:flex justify-center">
             {stats.map((item, idx) => (
               <li key={idx} className="sm:max-w-[15rem]">
-                <h4 className="text-4xl text-blue-600 font-semibold">
-                  {item.data}
+                <h4 className="text-4xl text-logo font-semibold flex items-center gap-4">
+                  {item.icon} {item.data}
                 </h4>
                 <p className="mt-3 font-medium">{item.desc}</p>
               </li>

@@ -8,6 +8,7 @@ import Footer from "../components/ui/Footer";
 import AcceleratorCTA from "../components/ui/AcceleratorCTA";
 import LogoGridAccelerator from "../components/ui/LogoGridAccelerator";
 import LogoGridStartups from "../components/ui/LogoGridStartups";
+import SecondaryFAQ from "../components/ui/SecondaryFAQ";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <LogoGridStartups />
       <Features />
       <FAQs />
+      <SecondaryFAQ />
       <FooterCTA />
       <Footer />
     </>

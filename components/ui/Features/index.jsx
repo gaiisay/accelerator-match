@@ -60,7 +60,7 @@ const Features = () => {
     <DarkWrapper id="features">
       <div className="custom-screen text-gray-300 justify-between flex flex-col">
         <div className="max-w-xl">
-          <h2 className="text-white text-3xl font-semibold sm:text-4xl">
+          <h2 className="text-white text-3xl font-extrabold sm:text-4xl">
             Let accelerator scouts chase you
           </h2>
         </div>

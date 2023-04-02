@@ -32,9 +32,9 @@ const FAQs = () => (
         </h2>
         <p className="mt-3">
           Everything you need to know. Can’t find the answer you’re looking for?
-          feel free to{" "}
+          Feel free to{" "}
           <a
-            className="text-blue-600 hover:text-blue-400 duration-150 font-semibold whitespace-nowrap"
+            className="text-logo hover:text-blue-400 duration-150 font-semibold whitespace-nowrap"
             href="mailto:joav@acceleratormatch.com"
           >
             contact us

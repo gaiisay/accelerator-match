@@ -10,7 +10,7 @@ const AcceleratorCTA = () => {
       </p>
       <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
         <NavLink
-          href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
+          href="https://airtable.com/shr9JwY4idyTzdSNO"
           className="flex items-center gap-x-2 text-white bg-logo hover:bg-blue-500 active:bg-blue-700"
         >
           Join accelerator network

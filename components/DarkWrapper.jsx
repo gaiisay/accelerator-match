@@ -1,7 +1,7 @@
 const DarkWrapper = ({ children, ...props }) => (
   <section
     {...props}
-    className={`relative overflow-hidden bg-gray-900 py-24 my-16 sm:py-16 ${
+    className={`relative overflow-hidden bg-gray-900 py-16 ${
       props.className || ""
     }`}
   >

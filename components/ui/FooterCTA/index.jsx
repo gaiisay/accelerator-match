@@ -4,10 +4,10 @@ import NavLink from "../NavLink";
 const FooterCTA = () => {
   return (
     <DarkWrapper>
-      <div className="custom-screen  gap-x-12 justify-between md:flex">
-        <div className="max-w-xl">
-          <h2 className="text-white text-3xl font-semibold sm:text-4xl">
-            Looking for an accelerator
+      <div className="custom-screen gap-x-12 justify-between flex flex-col items-center sm:gap-8 gap-4">
+        <div className="max-w-xl text-center">
+          <h2 className="text-white text-3xl font-extrabold sm:text-4xl">
+            Looking for an accelerator?
           </h2>
           <p className="mt-3 text-gray-300">
             We connect you with top accelerators around the globe through our
@@ -18,7 +18,7 @@ const FooterCTA = () => {
         <div className="flex-none mt-4 md:mt-0">
           <NavLink
             href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
-            className="inline-flex items-center gap-x-2 font-medium text-sm text-white bg-logo hover:bg-blue-500 active:bg-blue-700 "
+            className="inline-flex items-center gap-x-2 font-medium text-sm text-white bg-logo hover:bg-blue-500 active:bg-blue-700 mx-16"
           >
             Get started
             <svg
