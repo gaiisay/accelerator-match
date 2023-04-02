@@ -23,7 +23,7 @@ const CenteredCTAText = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col mx-auto lg:flex-row-reverse gap-y-6">
-        <div className="custom-screen text-justify lg:w-1/2">
+        <div className="custom-screen lg:w-1/2">
           <div className="max-w-xl mx-auto">
             <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
               Manually applying to accelerators is sooo 2012....
@@ -41,7 +41,7 @@ const CenteredCTAText = () => {
             </p>
           </div>
         </div>
-        <div className="my-auto mx-auto lg:w-1/2 xs:w-full">
+        <div className="my-auto mx-auto max-w-xl lg:w-1/2 xs:w-full">
           <ul className="flex-wrap gap-x-12 gap-y-10 items-center space-y-8 sm:space-y-0 sm:flex justify-center">
             {stats.map((item, idx) => (
               <li key={idx} className="sm:max-w-[15rem]">
