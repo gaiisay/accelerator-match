@@ -30,8 +30,8 @@ const FaqsCard = (props) => {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               stroke-width="2"
               d="M20 12H4"
             />
