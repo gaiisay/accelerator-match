@@ -5,6 +5,8 @@ import Brand from "../Brand";
 const navigation = [
   { name: "About", href: "/about" },
   { name: "FAQs", href: "#faqs" },
+  { name: "Imprint", href: "/imprint" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const Footer = () => (

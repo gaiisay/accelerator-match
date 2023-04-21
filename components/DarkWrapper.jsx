@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
+
 const DarkWrapper = ({ children, ...props }) => (
-  <section
+  <motion.section
     {...props}
     className={`relative overflow-hidden bg-gray-900 py-16 ${
       props.className || ""
     }`}
+    initial={{ y: 100 }}
+    whileInView={{ y: 0 }}
+    viewport={{ once: true }}
+    transition={{ type: "tween", duration: 0.6 }}
   >
     <div
       className="absolute inset-0 max-w-xl mx-auto h-72 blur-[118px]"
@@ -13,7 +19,7 @@ const DarkWrapper = ({ children, ...props }) => (
       }}
     ></div>
     <div className="relative">{children}</div>
-  </section>
+  </motion.section>
 );
 
 export default DarkWrapper;

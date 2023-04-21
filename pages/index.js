@@ -1,5 +1,4 @@
-import CenteredCTAText from "../components/ui/CenteredCTAText";
-import FAQs from "../components/ui/FAQs";
+import Stats from "../components/ui/Stats";
 import Features from "../components/ui/Features";
 import FooterCTA from "../components/ui/FooterCTA";
 import Hero from "../components/ui/Hero";
@@ -8,7 +7,8 @@ import Footer from "../components/ui/Footer";
 import AcceleratorCTA from "../components/ui/AcceleratorCTA";
 import LogoGridAccelerator from "../components/ui/LogoGridAccelerator";
 import LogoGridStartups from "../components/ui/LogoGridStartups";
-import SecondaryFAQ from "../components/ui/SecondaryFAQ";
+import HowItWorks from "../components/ui/HowitWorks";
+import FAQ from "../components/ui/FAQ";
 
 export default function Home() {
   return (
@@ -17,11 +17,11 @@ export default function Home() {
       <Hero />
       <LogoGridAccelerator />
       <AcceleratorCTA />
-      <CenteredCTAText />
+      <Stats />
       <LogoGridStartups />
       <Features />
-      <FAQs />
-      <SecondaryFAQ />
+      <HowItWorks />
+      <FAQ />
       <FooterCTA />
       <Footer />
     </>

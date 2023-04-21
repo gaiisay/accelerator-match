@@ -34,7 +34,12 @@ const LogoGridAccelerator = () => (
         <ul className="inline-grid grid-cols-2 items-center justify-items-center gap-y-8 md:grid-cols-4 lg:grid-cols-4">
           {logos.map((item, idx) => (
             <li key={idx}>
-              <Image src={item.src} alt={item.alt} className="h-32 sm:h-16" />
+              <Image
+                src={item.src}
+                alt={item.alt}
+                height={{ xs: 128, sm: 64 }}
+                width="auto"
+              />
             </li>
           ))}
         </ul>

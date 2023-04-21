@@ -18,7 +18,7 @@ const FooterCTA = () => {
         <div className="flex-none mt-4 md:mt-0">
           <NavLink
             href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
-            className="inline-flex items-center gap-x-2 font-medium text-sm text-white bg-logo hover:bg-blue-500 active:bg-blue-700 mx-16"
+            className="inline-flex items-center gap-x-2 font-medium text-sm text-white bg-logo mx-16"
           >
             Get started
             <svg

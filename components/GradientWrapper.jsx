@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
+
 const GradientWrapper = ({ children, ...props }) => (
-  <div {...props} className={`relative py-28 ${props.className || ""}`}>
+  <motion.div
+    {...props}
+    className={`relative py-28 ${props.className || ""}`}
+    initial={{ y: 100 }}
+    whileInView={{ y: 0 }}
+    viewport={{ once: true }}
+    transition={{ type: "tween", duration: 0.6 }}
+  >
     <div
       className={`absolute top-12 m-auto max-w-3xl h-[250px] blur-[130px] ${
         props.wrapperclassname || ""
@@ -10,7 +19,7 @@ const GradientWrapper = ({ children, ...props }) => (
       }}
     ></div>
     <div className="relative">{children}</div>
-  </div>
+  </motion.div>
 );
 
 export default GradientWrapper;

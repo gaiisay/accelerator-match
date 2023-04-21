@@ -7,6 +7,7 @@ const Brand = ({ ...props }) => (
     {...props}
     width={220}
     height={48}
+    style={{ width: 220, height: 48 }}
     priority
   />
 );

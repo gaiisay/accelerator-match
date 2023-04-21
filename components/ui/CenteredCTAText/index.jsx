@@ -19,7 +19,7 @@ const stats = [
   },
 ];
 
-const CenteredCTAText = () => {
+const Stats = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col mx-auto lg:flex-row-reverse gap-y-6">
@@ -58,4 +58,4 @@ const CenteredCTAText = () => {
   );
 };
 
-export default CenteredCTAText;
+export default Stats;
