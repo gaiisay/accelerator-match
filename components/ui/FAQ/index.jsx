@@ -93,7 +93,7 @@ export default () => {
 
   return (
     <SectionWrapper>
-      <div className="space-y-3 text-center">
+      <div className="space-y-3 text-center" id="faqs">
         <h1 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
           Frequently Asked Questions
         </h1>
