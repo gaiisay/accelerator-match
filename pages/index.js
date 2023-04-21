@@ -7,8 +7,8 @@ import Footer from "../components/ui/Footer";
 import AcceleratorCTA from "../components/ui/AcceleratorCTA";
 import LogoGridAccelerator from "../components/ui/LogoGridAccelerator";
 import LogoGridStartups from "../components/ui/LogoGridStartups";
-import HowItWorks from "../components/ui/HowitWorks";
 import FAQ from "../components/ui/FAQ";
+import HowItWorks from "../components/ui/HowitWorks";
 
 export default function Home() {
   return (
