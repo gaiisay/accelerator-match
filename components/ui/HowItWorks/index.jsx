@@ -69,18 +69,18 @@ const stats = [
 const HowItWorks = () => {
   return (
     <SectionWrapper>
-      <div className="flex flex-col mx-auto lg:flex-row-reverse gap-y-6">
-        <div className="custom-screen lg:w-1/2">
+      <div className="flex flex-col mx-auto gap-y-6">
+        <div className="custom-screen ">
           <div className="max-w-xl mx-auto">
             <h2 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
               How it works
             </h2>
           </div>
         </div>
-        <div className="my-auto mx-4 sm:mx-auto max-w-xl lg:w-1/2 xs:w-full text-center">
+        <div className="my-auto mx-4 sm:mx-auto max-w-xl xs:w-full text-center">
           <ul className="flex flex-col gap-8 items-center space-y-8 sm:space-y-0 justify-center">
             {stats.map((item, idx) => (
-              <li key={idx} className="sm:max-w-[15rem]">
+              <li key={idx} className="max-w-[20rem]">
                 <h4 className=" text-logo flex justify-center">{item.icon}</h4>
                 <p className="mt-3 font-medium">{item.desc}</p>
               </li>
