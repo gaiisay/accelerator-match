@@ -66,7 +66,7 @@ const stats = [
   },
 ];
 
-export const HowItWorks = () => {
+const HowItWorks = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col mx-auto lg:flex-row-reverse gap-y-6">
