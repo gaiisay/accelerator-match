@@ -49,18 +49,18 @@ const Pricing = () => {
 
   return (
     <GradientWrapper wrapperclassname="top-40 inset-x-0">
-      <section className="custom-screen text-gray-600">
+      <section className="text-gray-600 custom-screen">
         <div className="relative max-w-xl mx-auto sm:text-center">
-          <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          <h1 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
             Pricing plans
           </h1>
-          <div className="mt-3 max-w-xl">
+          <div className="max-w-xl mt-3">
             <p>
               Always know what you'll pay with monthly caps and flat pricing.
             </p>
           </div>
         </div>
-        <div className="mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
+        <div className="justify-center mt-16 gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
           {plans.map((item, idx) => (
             <div
               key={idx}
@@ -68,11 +68,11 @@ const Pricing = () => {
                 item.isMostPop ? "border-blue-600" : ""
               }`}
             >
-              <div className="p-8 space-y-4 border-b sm:text-center">
-                <span className="text-indigo-600 font-medium">{item.name}</span>
-                <div className="text-gray-800 text-3xl font-semibold">
+              <div className="p-8 border-b space-y-4 sm:text-center">
+                <span className="font-medium text-indigo-600">{item.name}</span>
+                <div className="text-3xl font-semibold text-gray-800">
                   ${item.price}{" "}
-                  <span className="text-xl text-gray-600 font-normal">/mo</span>
+                  <span className="text-xl font-normal text-gray-600">/mo</span>
                 </div>
                 <p>{item.desc}</p>
               </div>
@@ -82,7 +82,7 @@ const Pricing = () => {
                     <li key={idx} className="flex items-center gap-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-indigo-600"
+                        className="w-5 h-5 text-indigo-600"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >

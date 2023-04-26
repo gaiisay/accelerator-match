@@ -8,7 +8,7 @@ export default function About() {
     <div className="h-screen">
       <Navbar />
       <motion.div
-        className="flex justify-end items-center h-1/2 w-screen relative"
+        className="relative flex items-center justify-end w-screen h-1/2"
         animate={{ y: -4 }}
         transition={{
           type: "spring",

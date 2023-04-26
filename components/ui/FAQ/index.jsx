@@ -15,16 +15,16 @@ const FaqsCard = (props) => {
 
   return (
     <div
-      className="space-y-3 mt-5 overflow-hidden border-b"
+      className="mt-5 overflow-hidden border-b space-y-3"
       key={idx}
       onClick={handleOpenAnswer}
     >
-      <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
+      <h4 className="flex items-center justify-between pb-5 text-lg font-medium text-gray-700 cursor-pointer">
         {faqsList.q}
         {state ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-2"
+            className="w-5 h-5 ml-2 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -39,7 +39,7 @@ const FaqsCard = (props) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-2"
+            className="w-5 h-5 ml-2 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -93,15 +93,15 @@ export default () => {
 
   return (
     <SectionWrapper>
-      <div className="space-y-3 text-center" id="faqs">
-        <h1 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
+      <div className="text-center space-y-3" id="faqs">
+        <h1 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
           Frequently Asked Questions
         </h1>
-        <p className="text-gray-600 max-w-lg mx-auto text-lg">
+        <p className="max-w-lg mx-auto text-lg text-gray-600">
           Everything you need to know. Can’t find the answer you’re looking for?
           Feel free to{" "}
           <a
-            className="text-logo hover:text-blue-400 duration-150 font-semibold whitespace-nowrap"
+            className="font-semibold duration-150 text-logo hover:text-blue-400 whitespace-nowrap"
             href="mailto:joav@acceleratormatch.com"
           >
             contact us
@@ -109,7 +109,7 @@ export default () => {
           .
         </p>
       </div>
-      <div className="mt-14 mx-4">
+      <div className="mx-4 mt-14">
         {faqsList.map((item, idx) => (
           <div key={idx}>
             <FaqsCard idx={idx} faqsList={item} />

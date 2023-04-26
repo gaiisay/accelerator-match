@@ -37,7 +37,7 @@ const Navbar = () => {
             : "hidden"
         }`}
       >
-        <div className="custom-screen gap-x-20 items-center md:flex">
+        <div className="items-center custom-screen gap-x-20 md:flex">
           <NavHeader state={state} onClick={() => setState(!state)} />
           <div
             className={`flex-1 items-center mt-8 text-gray-600 md:font-medium md:mt-0 md:flex ${
@@ -47,7 +47,7 @@ const Navbar = () => {
             {pathname === "/about" ? (
               <></>
             ) : (
-              <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                 {navigation.map((item, idx) => {
                   return (
                     <li key={idx} className="hover:text-gray-900">
@@ -60,10 +60,10 @@ const Navbar = () => {
               </ul>
             )}
 
-            <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
+            <div className="items-center justify-end flex-1 mt-6 gap-x-6 space-y-6 md:flex md:space-y-0 md:mt-0">
               <NavLink
                 href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
-                className="flex items-center justify-center gap-x-1 text-sm text-white font-medium bg-logo hover:bg-gray-600 active:bg-gray-900 md:inline-flex"
+                className="flex items-center justify-center text-sm font-medium text-white gap-x-1 bg-logo hover:bg-gray-600 active:bg-gray-900 md:inline-flex"
               >
                 Get started
                 <svg

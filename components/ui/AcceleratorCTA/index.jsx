@@ -3,15 +3,15 @@ import NavLink from "../NavLink";
 
 const AcceleratorCTA = () => {
   return (
-    <div className="space-y-5 max-w-4xl mx-auto text-center">
+    <div className="max-w-4xl mx-auto text-center space-y-5">
       <p className="max-w-xl mx-auto">
         Join our growing network as an accelerator and start recieving tailored
         dealflow
       </p>
-      <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
+      <div className="flex items-center justify-center text-sm font-medium gap-x-3">
         <NavLink
           href="https://airtable.com/shr9JwY4idyTzdSNO"
-          className="flex items-center gap-x-2 text-white bg-logo"
+          className="flex items-center text-white gap-x-2 bg-logo"
         >
           Join accelerator network
           <svg

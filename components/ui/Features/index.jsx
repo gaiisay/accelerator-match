@@ -72,9 +72,9 @@ const Features = () => {
 
   return (
     <DarkWrapper id="features">
-      <div className="custom-screen text-gray-300 justify-between flex flex-col">
+      <div className="flex flex-col justify-between text-gray-300 custom-screen">
         <div className="max-w-xl">
-          <h2 className="text-white text-3xl font-extrabold sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Let accelerator scouts chase you
           </h2>
         </div>
@@ -82,11 +82,11 @@ const Features = () => {
           <ul className="grid gap-8 sm:grid-cols-2">
             {features.map((item, idx) => (
               <li key={idx} className="flex gap-x-4">
-                <div className="flex-none w-12 h-12 bg-gray-700 text-cyan-400 rounded-lg flex items-center justify-center">
+                <div className="flex items-center justify-center flex-none w-12 h-12 bg-gray-700 rounded-lg text-cyan-400">
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-lg text-gray-100 font-semibold">
+                  <h4 className="text-lg font-semibold text-gray-100">
                     {item.title}
                   </h4>
                   <p className="mt-3">{item.desc}</p>

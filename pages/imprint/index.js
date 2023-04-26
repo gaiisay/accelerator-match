@@ -8,8 +8,8 @@ export default function Imprint() {
     <>
       <Navbar />
       <div className="mx-4 text-gray-800">
-        <h1 className="text-4xl font-extrabold sm:text-6xl mb-4">Imprint</h1>
-        <p className="text-justify pb-16 border-b">
+        <h1 className="mb-4 text-4xl font-extrabold sm:text-6xl">Imprint</h1>
+        <p className="pb-16 text-justify border-b">
           Angaben gem. § 5 TMG: Isay, Joav 50829 Kontaktaufnahme: E-Mail:
           joav@acceleratormatch.com Haftungsausschluss – Disclaimer: Haftung für
           Inhalte Alle Inhalte unseres Internetauftritts wurden mit größter

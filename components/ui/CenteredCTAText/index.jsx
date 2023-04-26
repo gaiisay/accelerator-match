@@ -25,7 +25,7 @@ const Stats = () => {
       <div className="flex flex-col mx-auto lg:flex-row-reverse gap-y-6">
         <div className="custom-screen lg:w-1/2">
           <div className="max-w-xl mx-auto">
-            <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+            <h2 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
               Manually applying to accelerators is sooo 2012....
             </h2>
             <p className="mt-3 text-gray-600">
@@ -41,11 +41,11 @@ const Stats = () => {
             </p>
           </div>
         </div>
-        <div className="my-auto mx-4 sm:mx-auto max-w-xl lg:w-1/2 xs:w-full">
-          <ul className="flex-wrap gap-x-12 gap-y-10 items-center space-y-8 sm:space-y-0 sm:flex justify-center">
+        <div className="max-w-xl mx-4 my-auto sm:mx-auto lg:w-1/2 xs:w-full">
+          <ul className="flex-wrap items-center justify-center gap-x-12 gap-y-10 space-y-8 sm:space-y-0 sm:flex">
             {stats.map((item, idx) => (
               <li key={idx} className="sm:max-w-[15rem]">
-                <h4 className="text-4xl text-logo font-semibold flex items-center gap-4">
+                <h4 className="flex items-center text-4xl font-semibold text-logo gap-4">
                   {item.icon} {item.data}
                 </h4>
                 <p className="mt-3 font-medium">{item.desc}</p>

@@ -11,20 +11,20 @@ const navigation = [
 
 const Footer = () => (
   <footer className="pt-16">
-    <div className="custom-screen text-gray-600">
-      <div className="flex flex-wrap gap-y-10 items-center justify-between">
+    <div className="text-gray-600 custom-screen">
+      <div className="flex flex-wrap items-center justify-between gap-y-10">
         <div className="space-y-4">
           <Link href="/" className="inline-block">
             <Brand />
           </Link>
-          <h2 className="text-gray-800 text-lg font-semibold sm:text-2xl">
+          <h2 className="text-lg font-semibold text-gray-800 sm:text-2xl">
             Accelerator Applications on auto-pilot
           </h2>
           <p className="max-w-md">
             Recieve tailored offers by top accelerators via our automated
             startup-accelerator matchmaking tool.
           </p>
-          <div className="pt-2 flex items-center gap-x-6 text-gray-400">
+          <div className="flex items-center pt-2 text-gray-400 gap-x-6">
             <a
               href="https://www.facebook.com/profile.php?id=100090705556931"
               target="_blank"
@@ -77,7 +77,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="mt-10 py-10 border-t flex-row-reverse items-center justify-between sm:flex">
+      <div className="flex-row-reverse items-center justify-between py-10 mt-10 border-t sm:flex">
         <ul className="flex flex-wrap items-center gap-4 sm:text-sm">
           {navigation.map((item, idx) => (
             <li

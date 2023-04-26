@@ -21,9 +21,9 @@ const stats = [
 
 const Stats = () => (
   <SectionWrapper>
-    <div className="custom-screen text-gray-600">
+    <div className="text-gray-600 custom-screen">
       <div className="max-w-xl mx-auto text-center">
-        <h3 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
+        <h3 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
           Get your site to the top of Google
         </h3>
         <p className="mt-3">
@@ -31,11 +31,11 @@ const Stats = () => (
           locations.
         </p>
       </div>
-      <div className="my-auto mt-12 sm:mx-auto max-w-xl lg:w-1/2 xs:w-full text-center">
-        <ul className="flex-wrap gap-x-12 gap-y-10 items-center space-y-8 sm:space-y-0 sm:flex justify-center">
+      <div className="max-w-xl my-auto mt-12 text-center sm:mx-auto lg:w-1/2 xs:w-full">
+        <ul className="flex-wrap items-center justify-center gap-x-12 gap-y-10 space-y-8 sm:space-y-0 sm:flex">
           {stats.map((item, idx) => (
             <li key={idx} className="sm:max-w-[15rem]">
-              <h4 className="text-4xl text-logo font-semibold">{item.data}</h4>
+              <h4 className="text-4xl font-semibold text-logo">{item.data}</h4>
               <p className="mt-3 font-medium">{item.desc}</p>
             </li>
           ))}

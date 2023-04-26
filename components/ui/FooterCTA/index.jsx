@@ -4,9 +4,9 @@ import NavLink from "../NavLink";
 const FooterCTA = () => {
   return (
     <DarkWrapper>
-      <div className="custom-screen gap-x-12 justify-between flex flex-col items-center sm:gap-8 gap-4">
+      <div className="flex flex-col items-center justify-between custom-screen gap-x-12 sm:gap-8 gap-4">
         <div className="max-w-xl text-center">
-          <h2 className="text-white text-3xl font-extrabold sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Looking for an accelerator?
           </h2>
           <p className="mt-3 text-gray-300">
@@ -18,7 +18,7 @@ const FooterCTA = () => {
         <div className="flex-none mt-4 md:mt-0">
           <NavLink
             href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
-            className="inline-flex items-center gap-x-2 font-medium text-sm text-white bg-logo mx-16"
+            className="inline-flex items-center mx-16 text-sm font-medium text-white gap-x-2 bg-logo"
           >
             Get started
             <svg

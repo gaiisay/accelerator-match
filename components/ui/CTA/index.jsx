@@ -6,9 +6,9 @@ import cta_image from '../../../public/cta-img.svg'
 const CTA = () => {
     return (
         <SectionWrapper id="cta" className="overflow-hidden">
-            <div className="custom-screen flex flex-col-reverse gap-x-12 justify-between md:flex-row md:items-center">
+            <div className="flex flex-col-reverse justify-between custom-screen gap-x-12 md:flex-row md:items-center">
                 <div className="flex-none max-w-xl mt-12 space-y-3 md:mt-0">
-                    <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    <h2 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
                         Simple, powerful ways to increase website users
                     </h2>
                     <p className="text-gray-600">
@@ -17,7 +17,7 @@ const CTA = () => {
                     <div className="pt-1">
                         <NavLink
                             href="/pricing"
-                            className="inline-flex items-center gap-x-2 font-medium text-sm text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 "
+                            className="inline-flex items-center text-sm font-medium text-white bg-blue-600 gap-x-2 hover:bg-blue-500 active:bg-blue-700 "
                         >
                             Try it out
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
@@ -27,7 +27,7 @@ const CTA = () => {
                     </div>
                 </div>
                 <div className="flex-none w-full md:max-w-xl">
-                    <Image src={cta_image} alt="chart" className='w-full shadow-lg rounded-lg border' />
+                    <Image src={cta_image} alt="chart" className='w-full border rounded-lg shadow-lg' />
                 </div>
             </div>
         </SectionWrapper>

@@ -27,11 +27,11 @@ const logos = [
 const LogoGridAccelerator = () => (
   <SectionWrapper id="accelerators">
     <div className="custom-screen">
-      <h2 className="font-semibold text-sm text-gray-800 text-center">
+      <h2 className="text-sm font-semibold text-center text-gray-800">
         Some of our Accelerators and Partners
       </h2>
-      <div className="mt-8 flex justify-center">
-        <ul className="inline-grid grid-cols-2 items-center justify-items-center gap-y-8 md:grid-cols-4 lg:grid-cols-4">
+      <div className="flex justify-center mt-8">
+        <ul className="items-center inline-grid grid-cols-2 justify-items-center gap-y-8 md:grid-cols-4 lg:grid-cols-4">
           {logos.map((item, idx) => (
             <li key={idx}>
               <Image

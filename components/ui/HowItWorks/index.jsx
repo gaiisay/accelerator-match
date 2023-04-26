@@ -72,16 +72,16 @@ const HowItWorks = () => {
       <div className="flex flex-col mx-auto gap-y-6">
         <div className="custom-screen ">
           <div className="max-w-xl mx-auto">
-            <h2 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
               How it works
             </h2>
           </div>
         </div>
-        <div className="my-auto mx-4 sm:mx-auto max-w-xl xs:w-full text-center">
-          <ul className="flex flex-col gap-8 items-center space-y-8 sm:space-y-0 justify-center">
+        <div className="max-w-xl mx-4 my-auto text-center sm:mx-auto xs:w-full">
+          <ul className="flex flex-col items-center justify-center gap-8 space-y-8 sm:space-y-0">
             {stats.map((item, idx) => (
               <li key={idx} className="max-w-[20rem]">
-                <h4 className=" text-logo flex justify-center">{item.icon}</h4>
+                <h4 className="flex justify-center text-logo">{item.icon}</h4>
                 <p className="mt-3 font-medium">{item.desc}</p>
               </li>
             ))}

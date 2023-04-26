@@ -6,13 +6,13 @@ const Hero = () => (
   <section>
     <GradientWrapper
       wrapperclassname="inset-0"
-      className="custom-screen text-gray-600"
+      className="text-gray-600 custom-screen"
     >
       <motion.div
-        className="space-y-5 max-w-4xl mx-auto text-center"
+        className="max-w-4xl mx-auto text-center space-y-5"
         animate={{ y: 0 }}
       >
-        <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
+        <h1 className="mx-auto text-5xl font-extrabold text-gray-800 sm:text-6xl">
           Accelerator applications,{" "}
           <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#3cba92] to-[#07A9B6]">
             on auto-pilot.
@@ -22,10 +22,10 @@ const Hero = () => (
           Recieve tailored offers by top accelerators via our automated
           startup-accelerator matchmaking tool.
         </p>
-        <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
+        <div className="flex items-center justify-center text-sm font-medium gap-x-3">
           <NavLink
             href="https://5jxl9hujrgm.typeform.com/to/dmAfLDOG"
-            className="flex items-center gap-x-2 text-white bg-logo"
+            className="flex items-center text-white gap-x-2 bg-logo"
           >
             Free Startup Signup
             <svg
@@ -43,7 +43,7 @@ const Hero = () => (
           </NavLink>
           <NavLink
             href="#features"
-            className="flex items-center gap-x-2 text-gray-700 hover:text-gray-900"
+            className="flex items-center text-gray-700 gap-x-2 hover:text-gray-900"
             scroll={false}
           >
             Learn more
@@ -61,7 +61,7 @@ const Hero = () => (
             </svg>
           </NavLink>
         </div>
-        <div className="max-w-xl mx-auto flex gap-6 justify-center">
+        <div className="flex justify-center max-w-xl mx-auto gap-6">
           <span>✌️ 100% Free</span>
           <span>👩‍💻 2-Minutes Sign-Up</span>
           <span>🚀 Top Accelerators</span>

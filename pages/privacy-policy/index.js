@@ -8,10 +8,10 @@ export default function Privacy() {
     <>
       <Navbar />
       <div className="mx-4 text-gray-800">
-        <h1 className="text-4xl font-extrabold sm:text-6xl mb-4">
+        <h1 className="mb-4 text-4xl font-extrabold sm:text-6xl">
           Privacy Policy
         </h1>
-        <div className="text-justify pb-16 border-b">
+        <div className="pb-16 text-justify border-b">
           <p>Datenschutzerklärung</p>
           <p>Verantwortlicher für die Datenverarbeitung ist:</p>
           <p>Acceleratormatch.io</p>

@@ -7,7 +7,7 @@ const Brand = ({ ...props }) => (
     {...props}
     width={220}
     height={48}
-    style={{ width: 220, height: 48 }}
+    className="w-48 h-12 sm:w-56"
     priority
   />
 );
