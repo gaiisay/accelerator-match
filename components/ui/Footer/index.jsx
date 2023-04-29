@@ -11,13 +11,13 @@ const navigation = [
 
 const Footer = () => (
   <footer className="pt-16">
-    <div className="text-gray-600 custom-screen">
+    <div className="custom-screen">
       <div className="flex flex-wrap items-center justify-between gap-y-10">
         <div className="space-y-4">
           <Link href="/" className="inline-block">
             <Brand />
           </Link>
-          <h2 className="text-lg font-semibold text-gray-800 sm:text-2xl">
+          <h2 className="text-lg font-semibold sm:text-2xl">
             Accelerator Applications on auto-pilot
           </h2>
           <p className="max-w-md">
@@ -32,7 +32,7 @@ const Footer = () => (
               rel="noreferrer"
             >
               <svg
-                className="w-6 h-6 hover:text-gray-500 duration-150"
+                className="w-6 h-6 duration-150 hover:text-gray-500"
                 fill="none"
                 viewBox="0 0 48 48"
               >
@@ -57,7 +57,7 @@ const Footer = () => (
               rel="noreferrer"
             >
               <svg
-                className="w-6 h-6 hover:text-gray-500 duration-150"
+                className="w-6 h-6 duration-150 hover:text-gray-500"
                 fill="none"
                 viewBox="0 0 28 28"
               >
@@ -82,7 +82,7 @@ const Footer = () => (
           {navigation.map((item, idx) => (
             <li
               key={idx}
-              className="font-medium text-gray-700 hover:text-gray-900 duration-150"
+              className="font-medium duration-150 hover:text-gray-900 dark:hover:text-gray-400"
             >
               <Link href={item.href}>{item.name}</Link>
             </li>

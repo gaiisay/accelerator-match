@@ -15,16 +15,16 @@ const FaqsCard = (props) => {
 
   return (
     <div
-      className="mt-5 overflow-hidden border-b space-y-3"
+      className="mt-5 space-y-3 overflow-hidden border-b"
       key={idx}
       onClick={handleOpenAnswer}
     >
-      <h4 className="flex items-center justify-between pb-5 text-lg font-medium text-gray-700 cursor-pointer">
+      <h4 className="flex items-center justify-between pb-5 text-lg font-medium cursor-pointer">
         {faqsList.q}
         {state ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 ml-2 text-gray-500"
+            className="w-5 h-5 ml-2 text-lightMode dark:text-darkMode"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -39,7 +39,7 @@ const FaqsCard = (props) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 ml-2 text-gray-500"
+            className="w-5 h-5 ml-2 text-lightMode dark:text-darkMode"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -59,7 +59,7 @@ const FaqsCard = (props) => {
         style={state ? { height: answerH } : { height: "0px" }}
       >
         <div>
-          <p className="text-gray-500">{faqsList.a}</p>
+          <p>{faqsList.a}</p>
         </div>
       </div>
     </div>
@@ -93,11 +93,11 @@ export default () => {
 
   return (
     <SectionWrapper>
-      <div className="text-center space-y-3" id="faqs">
-        <h1 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
+      <div className="space-y-3 text-center" id="faqs">
+        <h1 className="text-3xl font-extrabold sm:text-4xl">
           Frequently Asked Questions
         </h1>
-        <p className="max-w-lg mx-auto text-lg text-gray-600">
+        <p className="max-w-lg mx-auto text-lg ">
           Everything you need to know. Can’t find the answer you’re looking for?
           Feel free to{" "}
           <a

@@ -4,12 +4,12 @@ import NavLink from "../NavLink";
 const FooterCTA = () => {
   return (
     <DarkWrapper>
-      <div className="flex flex-col items-center justify-between custom-screen gap-x-12 sm:gap-8 gap-4">
+      <div className="flex flex-col items-center justify-between gap-4 custom-screen gap-x-12 sm:gap-8">
         <div className="max-w-xl text-center">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">
             Looking for an accelerator?
           </h2>
-          <p className="mt-3 text-gray-300">
+          <p className="mt-3">
             We connect you with top accelerators around the globe through our
             founder friendly approach. Share your info and start recieving
             requests.

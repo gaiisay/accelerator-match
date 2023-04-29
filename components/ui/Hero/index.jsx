@@ -4,15 +4,12 @@ import { motion } from "framer-motion";
 
 const Hero = () => (
   <section>
-    <GradientWrapper
-      wrapperclassname="inset-0"
-      className="text-gray-600 custom-screen"
-    >
+    <GradientWrapper wrapperclassname="inset-0" className="custom-screen">
       <motion.div
-        className="max-w-4xl mx-auto text-center space-y-5"
+        className="max-w-4xl mx-auto space-y-5 text-center"
         animate={{ y: 0 }}
       >
-        <h1 className="mx-auto text-5xl font-extrabold text-gray-800 sm:text-6xl">
+        <h1 className="mx-auto text-5xl font-extrabold sm:text-6xl">
           Accelerator applications,{" "}
           <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#3cba92] to-[#07A9B6]">
             on auto-pilot.
@@ -43,7 +40,7 @@ const Hero = () => (
           </NavLink>
           <NavLink
             href="#features"
-            className="flex items-center text-gray-700 gap-x-2 hover:text-gray-900"
+            className="flex items-center gap-x-2 "
             scroll={false}
           >
             Learn more
@@ -61,7 +58,7 @@ const Hero = () => (
             </svg>
           </NavLink>
         </div>
-        <div className="flex justify-center max-w-xl mx-auto gap-6">
+        <div className="flex justify-center max-w-xl gap-6 mx-auto">
           <span>✌️ 100% Free</span>
           <span>👩‍💻 2-Minutes Sign-Up</span>
           <span>🚀 Top Accelerators</span>

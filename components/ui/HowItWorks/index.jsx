@@ -72,7 +72,7 @@ const HowItWorks = () => {
       <div className="flex flex-col mx-auto gap-y-6">
         <div className="custom-screen ">
           <div className="max-w-xl mx-auto">
-            <h2 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold sm:text-4xl">
               How it works
             </h2>
           </div>

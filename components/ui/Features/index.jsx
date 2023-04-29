@@ -72,9 +72,9 @@ const Features = () => {
 
   return (
     <DarkWrapper id="features">
-      <div className="flex flex-col justify-between text-gray-300 custom-screen">
+      <div className="flex flex-col justify-between custom-screen">
         <div className="max-w-xl">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">
             Let accelerator scouts chase you
           </h2>
         </div>
@@ -86,9 +86,7 @@ const Features = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-100">
-                    {item.title}
-                  </h4>
+                  <h4 className="text-lg font-semibold">{item.title}</h4>
                   <p className="mt-3">{item.desc}</p>
                 </div>
               </li>

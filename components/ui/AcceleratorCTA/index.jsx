@@ -3,7 +3,7 @@ import NavLink from "../NavLink";
 
 const AcceleratorCTA = () => {
   return (
-    <div className="max-w-4xl mx-auto text-center space-y-5">
+    <div className="max-w-4xl mx-auto space-y-5 text-center">
       <p className="max-w-xl mx-auto">
         Join our growing network as an accelerator and start recieving tailored
         dealflow
