@@ -7,6 +7,7 @@ import foundersbayDark from "../../../public/logos/foundersbay-dark.svg";
 import seed from "../../../public/logos/seed.svg";
 import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const logos = [
   {
@@ -33,6 +34,17 @@ const logos = [
 
 const LogoGridAccelerator = () => {
   const { theme } = useTheme();
+  const [src, setSrc] = useState("src");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setSrc("src_dark");
+    } else {
+      setSrc("src");
+    }
+  }, [theme]);
+
+  console.log(theme);
   return (
     <SectionWrapper id="accelerators">
       <div className="custom-screen">
@@ -44,7 +56,7 @@ const LogoGridAccelerator = () => {
             {logos.map((item, idx) => (
               <li key={idx}>
                 <Image
-                  src={theme === "dark" ? item.src_dark : item.src}
+                  src={item[src]}
                   alt={item.alt}
                   height={{ xs: 128, sm: 64 }}
                   width="auto"

@@ -12,6 +12,7 @@ import disclosed from "../../../public/logos/disclosed.svg";
 import sieve from "../../../public/logos/sieve.svg";
 import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const logos = [
   {
@@ -62,6 +63,16 @@ const logos = [
 
 const LogoGridStartups = () => {
   const { theme } = useTheme();
+  const [src, setSrc] = useState("src");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setSrc("src_dark");
+    } else {
+      setSrc("src");
+    }
+  }, [theme]);
+
   return (
     <SectionWrapper>
       <div className="custom-screen sm:mb-16">
@@ -73,7 +84,7 @@ const LogoGridStartups = () => {
             {logos.map((item, idx) => (
               <li key={idx}>
                 <Image
-                  src={theme === "dark" ? item.src_dark : item.src}
+                  src={item[src]}
                   alt={item.alt}
                   height={100}
                   width={150}
