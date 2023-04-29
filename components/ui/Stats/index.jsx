@@ -24,11 +24,15 @@ const Stats = () => (
     <div className="custom-screen">
       <div className="max-w-xl mx-auto text-center">
         <h3 className="text-3xl font-extrabold sm:text-4xl">
-          Get your site to the top of Google
+          Manually applying to accelerators is sooo 2012....{" "}
         </h3>
         <p className="mt-3">
-          We distribute your visitors to your site across different geographical
-          locations.
+          We revolutionise the accelerator application process by shifting the
+          power back to founders. No more spending countless hours on
+          researching the web for suitable accelerators and manually applying to
+          them one-by-one. With Acceleratormatch, founders share key business
+          information via our typeform only once and start recieving offers by
+          best-fit accelerators to join their batch.
         </p>
       </div>
       <div className="max-w-xl my-auto mt-12 text-center sm:mx-auto lg:w-1/2 xs:w-full">

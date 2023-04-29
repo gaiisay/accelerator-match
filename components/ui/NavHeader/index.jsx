@@ -1,21 +1,67 @@
 import Link from "next/link";
 import Brand from "../Brand";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const NavHeader = ({ onClick, state, menuBtnEl }) => {
   const { theme, setTheme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState();
+
+  useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
 
   return (
     <div className="flex items-center justify-between py-5 md:block">
-      <Link href="/">
-        <Brand />
-      </Link>
-      <button
-        className="block py-2 pl-3 pr-4 rounded md:p-0"
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      >
-        Toggle
-      </button>
+      <div className="flex gap-16">
+        <Link href="/">
+          <Brand />
+        </Link>
+        <button
+          className="block py-2 pl-3 pr-4 rounded md:p-0"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        >
+          {currentTheme === "dark" ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-sun"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-moon"
+            >
+              <path d="M12 3a6.364 6.364 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          )}
+        </button>
+      </div>
       <div className="md:hidden">
         <button
           role="button"
