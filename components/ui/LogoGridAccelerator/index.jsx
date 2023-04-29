@@ -8,27 +8,32 @@ import seed from "../../../public/logos/seed.svg";
 import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const logos = [
   {
     src: startplatz,
     src_dark: startplatzDark,
     alt: "startplatz accelerator",
+    url: "https://www.startplatz.de/accelerator/",
   },
   {
     src: recap,
     src_dark: recap,
     alt: "recap",
+    url: "https://www.recap.world/",
   },
   {
     src: foundersbay,
     src_dark: foundersbayDark,
     alt: "foundersbay",
+    url: "https://founders-bay.io/",
   },
   {
     src: seed,
     src_dark: seed,
     alt: "seed",
+    url: "https://seed-accelerator.com/",
   },
 ];
 
@@ -55,12 +60,14 @@ const LogoGridAccelerator = () => {
           <ul className="inline-grid items-center grid-cols-2 gap-8 justify-items-center md:grid-cols-4 lg:grid-cols-4">
             {logos.map((item, idx) => (
               <li key={idx}>
-                <Image
-                  src={item[src]}
-                  alt={item.alt}
-                  height={{ xs: 128, sm: 64 }}
-                  width="auto"
-                />
+                <Link href={item.url}>
+                  <Image
+                    src={item[src]}
+                    alt={item.alt}
+                    height={{ xs: 128, sm: 64 }}
+                    width="auto"
+                  />
+                </Link>
               </li>
             ))}
           </ul>

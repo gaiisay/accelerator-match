@@ -75,7 +75,7 @@ export default () => {
     },
     {
       q: "I am an accelerator how does that work?",
-      a: "If you are an accelerator how is interested in using our data base for your scouting, please reach out to joav@acceleratormatch.com to schedule a short intro call.",
+      a: "If you are an accelerator who is interested in using our data base for your scouting, please reach out to joav@acceleratormatch.com to schedule a short intro call.",
     },
     {
       q: "How come it's free, what's the catch?",
@@ -109,7 +109,7 @@ export default () => {
           .
         </p>
       </div>
-      <div className="mx-4 mt-14">
+      <div className="max-w-4xl mx-4 mx-auto mt-14">
         {faqsList.map((item, idx) => (
           <div key={idx}>
             <FaqsCard idx={idx} faqsList={item} />
