@@ -109,7 +109,7 @@ export default () => {
           .
         </p>
       </div>
-      <div className="max-w-4xl mx-4 mx-auto mt-14">
+      <div className="max-w-4xl px-8 mx-auto mt-14">
         {faqsList.map((item, idx) => (
           <div key={idx}>
             <FaqsCard idx={idx} faqsList={item} />

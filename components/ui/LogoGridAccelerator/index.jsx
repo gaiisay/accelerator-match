@@ -9,6 +9,8 @@ import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import InfiniteBanner, { useClock } from "../../InfiniteBanner";
 
 const logos = [
   {
@@ -40,7 +42,10 @@ const logos = [
 const LogoGridAccelerator = () => {
   const { theme } = useTheme();
   const [src, setSrc] = useState("src");
-
+  const clock = useClock({
+    defaultValue: Date.now(),
+    reverse: false,
+  });
   useEffect(() => {
     if (theme === "dark") {
       setSrc("src_dark");
@@ -53,25 +58,23 @@ const LogoGridAccelerator = () => {
   return (
     <SectionWrapper id="accelerators">
       <div className="custom-screen">
-        <h2 className="text-sm font-semibold text-center">
+        <h2 className="mb-8 text-sm font-semibold text-center">
           Some of our Accelerators and Partners
         </h2>
-        <div className="flex justify-center mt-8">
-          <ul className="inline-grid items-center grid-cols-2 gap-8 justify-items-center md:grid-cols-4 lg:grid-cols-4">
+        <InfiniteBanner clock={clock.value}>
+          <div className="flex justify-center gap-16 p-8 align-middle">
             {logos.map((item, idx) => (
-              <li key={idx}>
-                <Link href={item.url}>
-                  <Image
-                    src={item[src]}
-                    alt={item.alt}
-                    height={{ xs: 128, sm: 64 }}
-                    width="auto"
-                  />
-                </Link>
-              </li>
+              <Link key={idx} href={item.url}>
+                <Image
+                  src={item[src]}
+                  alt={item.alt}
+                  height={100}
+                  width="auto"
+                />
+              </Link>
             ))}
-          </ul>
-        </div>
+          </div>
+        </InfiniteBanner>
       </div>
     </SectionWrapper>
   );

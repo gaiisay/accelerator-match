@@ -4,10 +4,13 @@ const GradientWrapper = ({ children, ...props }) => (
   <motion.div
     {...props}
     className={`relative py-28 ${props.className || ""}`}
-    initial={{ y: 100 }}
-    whileInView={{ y: 0 }}
+    // initial={{ y: 100 }}
+    animate={{
+      scale: [0.25, 1],
+      opacity: [0, 0.5, 1],
+      transition: { duration: 0.5, type: "tween" },
+    }}
     viewport={{ once: true }}
-    transition={{ type: "tween", duration: 0.6 }}
   >
     <div
       className={`absolute top-12 m-auto max-w-3xl h-[250px] blur-[130px] ${
