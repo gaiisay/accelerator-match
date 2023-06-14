@@ -13,7 +13,7 @@ const Hero = () => (
           Accelerator applications,{" "}
           <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#3cba92] to-[#07A9B6]">
             on auto-pilot.
-          </span>
+          </span>{" "}
         </h1>
         <p className="max-w-xl mx-auto">
           Recieve tailored offers by top accelerators via our automated

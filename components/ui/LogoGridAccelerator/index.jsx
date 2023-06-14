@@ -5,6 +5,7 @@ import recap from "../../../public/logos/recap.svg";
 import foundersbay from "../../../public/logos/foundersbay.svg";
 import foundersbayDark from "../../../public/logos/foundersbay-dark.svg";
 import seed from "../../../public/logos/seed.svg";
+import bergsteiger from "../../../public/logos/bergsteiger.png";
 import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -36,6 +37,12 @@ const logos = [
     src_dark: seed,
     alt: "seed",
     url: "https://seed-accelerator.com/",
+  },
+  {
+    src: bergsteiger,
+    src_dark: bergsteiger,
+    alt: "bergsteiger",
+    url: "https://accelerator-solingen.de/",
   },
 ];
 

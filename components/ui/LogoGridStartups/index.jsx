@@ -10,6 +10,7 @@ import fyyl from "../../../public/logos/fyyl.svg";
 import fyylDark from "../../../public/logos/fyyl-dark.svg";
 import disclosed from "../../../public/logos/disclosed.svg";
 import sieve from "../../../public/logos/sieve.svg";
+import coinCharted from "../../../public/logos/coin-charted.jpeg";
 import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";

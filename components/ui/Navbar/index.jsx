@@ -44,24 +44,20 @@ const Navbar = () => {
               state ? "block" : "hidden"
             } `}
           >
-            {pathname === "/about" ? (
-              <></>
-            ) : (
-              <ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                {navigation.map((item, idx) => {
-                  return (
-                    <li
-                      key={idx}
-                      className="hover:text-gray-500 dark:hover:text-gray-400"
-                    >
-                      <Link href={item.href} className="block" scroll={false}>
-                        {item.name}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
+            <ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+              {navigation.map((item, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className="hover:text-gray-500 dark:hover:text-gray-400"
+                  >
+                    <Link href={item.href} className="block" scroll={false}>
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
 
             <div className="items-center justify-end flex-1 mt-6 space-y-6 gap-x-6 md:flex md:space-y-0 md:mt-0">
               <NavLink
