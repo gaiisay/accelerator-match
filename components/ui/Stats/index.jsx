@@ -35,7 +35,7 @@ const Stats = () => (
           best-fit accelerators to join their batch.
         </p>
       </div>
-      <div className="max-w-xl my-auto mt-12 text-center sm:mx-auto lg:w-1/2 xs:w-full">
+      <div className="max-w-xl mx-auto my-auto mt-12 text-center lg:w-1/2 xs:w-full">
         <ul className="flex-wrap items-center justify-center space-y-8 gap-x-12 gap-y-10 sm:space-y-0 sm:flex">
           {stats.map((item, idx) => (
             <li key={idx} className="sm:max-w-[15rem]">

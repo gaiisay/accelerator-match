@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutHero = () => (
   <section>
-    <DarkWrapper wrapperclassname="inset-0" className="custom-screen">
+    <DarkWrapper wrapperclassname="inset-0">
       <motion.div
         className="max-w-4xl mx-auto space-y-5 text-center"
         animate={{ y: 0 }}

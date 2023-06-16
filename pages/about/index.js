@@ -8,7 +8,7 @@ import Team from "../../components/ui/Team";
 
 export default function About() {
   return (
-    <div className="h-screen">
+    <div>
       <Navbar />
       <AboutHero />
       <OurStory />

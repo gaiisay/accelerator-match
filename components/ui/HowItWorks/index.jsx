@@ -70,15 +70,15 @@ const HowItWorks = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col mx-auto gap-y-6">
-        <div className="custom-screen ">
+        <div className="custom-screen">
           <div className="max-w-xl mx-auto">
             <h2 className="text-3xl font-extrabold sm:text-4xl">
               How it works
             </h2>
           </div>
         </div>
-        <div className="max-w-xl mx-4 my-auto text-center sm:mx-auto xs:w-full">
-          <ul className="flex flex-col items-center justify-center gap-8 space-y-8 sm:space-y-0">
+        <div className="max-w-xl mx-4 my-auto text-center md:max-w-5xl sm:mx-auto xs:w-full">
+          <ul className="flex flex-col items-center justify-center gap-8 space-y-8 md:flex-row md:space-y-0">
             {stats.map((item, idx) => (
               <li key={idx} className="max-w-[20rem]">
                 <h4 className="flex justify-center text-logo">{item.icon}</h4>

@@ -64,7 +64,7 @@ const LogoGridAccelerator = () => {
   console.log(theme);
   return (
     <SectionWrapper id="accelerators">
-      <div className="custom-screen">
+      <div>
         <h2 className="mb-8 text-sm font-semibold text-center">
           Some of our Accelerators and Partners
         </h2>

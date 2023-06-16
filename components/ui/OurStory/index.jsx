@@ -4,7 +4,7 @@ import SectionWrapper from "../../SectionWrapper";
 const OurStory = () => (
   <SectionWrapper>
     <div className="custom-screen">
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         <div className="max-w-xl">
           <h3 className="text-3xl font-extrabold sm:text-4xl">Our Story</h3>
           <p className="mt-3 text-gray-500">
@@ -28,17 +28,20 @@ const OurStory = () => (
             in the startup ecosystem.
           </p>
         </div>
-        <div>
-          <Image
-            className="object-cover mx-auto mt-4"
-            src="/Light-brown-in-Basic11.png"
+        <div className="flex items-center justify-center w-full">
+          <video loop autoPlay muted playsInline>
+            <source src="/2d3a1be6fde7479a93532e165d4e98a0.webm" />
+          </video>
+          {/* <Image
+            className="object-cover h-full mx-auto "
+            src="/rocket-unscreen_noBg.gif"
             alt="image of binoculars"
-            width={1000}
-            height={1000}
-          />
+            width={500}
+            height={500}
+          /> */}
         </div>
       </div>
-      <div className="mx-auto mt-12 ">
+      <div className="mx-auto mt-12">
         <h3 className="text-3xl font-extrabold sm:text-4xl">Vision</h3>
         <p className="mt-3 text-gray-500">
           Our Vision: Empowering Startups to Change the World! Acceleratormatch

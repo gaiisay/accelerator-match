@@ -58,7 +58,7 @@ const InfiniteBanner = ({
       {...otherProps}
       style={{
         position: "relative",
-        width: "max-content",
+        // width: "max-content",
         overflow: "hidden",
         ...otherProps.style,
       }}

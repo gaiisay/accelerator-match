@@ -3,10 +3,10 @@ import GradientWrapper from "../../GradientWrapper";
 
 const Team = () => {
   return (
-    <GradientWrapper wrapperclassname="top-40 inset-x-0">
+    <GradientWrapper wrapperclassname="top-40 inset-x-0" className="pt-12">
       <section className="text-gray-600 custom-screen">
         <div className="relative max-w-xl mx-auto sm:text-center">
-          <h1 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
+          <h1 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
             Team
           </h1>
         </div>
