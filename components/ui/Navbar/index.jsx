@@ -10,8 +10,8 @@ const Navbar = () => {
   const menuBtnEl = useRef();
 
   const navigation = [
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "FAQs", href: "#faqs" },
   ];
 
   useEffect(() => {

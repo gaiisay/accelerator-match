@@ -4,15 +4,13 @@ import GradientWrapper from "../../GradientWrapper";
 const Team = () => {
   return (
     <GradientWrapper wrapperclassname="top-40 inset-x-0" className="pt-12">
-      <section className="text-gray-600 custom-screen">
+      <section className=" custom-screen">
         <div className="relative max-w-xl mx-auto sm:text-center">
-          <h1 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">
-            Team
-          </h1>
+          <h1 className="text-3xl font-extrabold sm:text-4xl">Team</h1>
         </div>
         <div className="flex items-center justify-center gap-6 mt-16 sm:grid-cols-2 sm:space-y-0">
           <div
-            className={`bg-white relative flex-1 flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 max-w-xs`}
+            className={`bg-white dark:bg-teal-900 dark:text-white relative flex-1 flex items-stretch flex-col rounded-xl mt-6 sm:mt-0 max-w-xs`}
           >
             <Image
               className="object-cover mx-auto mt-4 rounded-full w-28 h-28"
@@ -22,10 +20,10 @@ const Team = () => {
               height={200}
             />
             <div className="p-4 space-y-2 sm:text-center">
-              <div className="mb-4 text-3xl font-semibold text-gray-800">
-                Joav Isay
-              </div>
-              <span className="font-medium text-indigo-600 ">Founder</span>
+              <div className="mb-4 text-3xl font-semibold ">Joav Isay</div>
+              <span className="font-medium text-indigo-600 dark:text-indigo-400 ">
+                Founder
+              </span>
             </div>
             <div className="flex items-center justify-center pt-2 mb-4 gap-x-6">
               <a
@@ -53,7 +51,7 @@ const Team = () => {
                 </svg>
               </a>
             </div>
-            <div className="p-4 text-justify text-gray-500">
+            <div className="p-4 text-justify text-gray-500 dark:text-darkMode">
               <p>
                 Hi, my name is Joav and I am the founder of Acceleratormatch. I
                 have worked several years in the early startup ecosystem, and

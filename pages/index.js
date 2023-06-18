@@ -9,6 +9,8 @@ import LogoGridAccelerator from "../components/ui/LogoGridAccelerator";
 import LogoGridStartups from "../components/ui/LogoGridStartups";
 import FAQ from "../components/ui/FAQ";
 import HowItWorks from "../components/ui/HowItWorks";
+import BeforeAfter from "../components/ui/BeforeAfter";
+import Roadmap from "../components/ui/Roadmap";
 
 export default function Home() {
   return (
@@ -17,11 +19,13 @@ export default function Home() {
       <Hero />
       <LogoGridAccelerator />
       <AcceleratorCTA />
+      <BeforeAfter />
       <Stats />
       <LogoGridStartups />
       <Features />
       <HowItWorks />
       <FAQ />
+      <Roadmap />
       <FooterCTA />
       <Footer />
     </>

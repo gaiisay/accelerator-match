@@ -78,7 +78,7 @@ const HowItWorks = () => {
           </div>
         </div>
         <div className="max-w-xl mx-4 my-auto text-center md:max-w-5xl sm:mx-auto xs:w-full">
-          <ul className="flex flex-col items-center justify-center gap-8 space-y-8 md:flex-row md:space-y-0">
+          <ul className="flex flex-col items-start justify-center gap-8 mt-4 space-y-8 md:flex-row md:space-y-0">
             {stats.map((item, idx) => (
               <li key={idx} className="max-w-[20rem]">
                 <h4 className="flex justify-center text-logo">{item.icon}</h4>
