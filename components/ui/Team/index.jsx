@@ -10,7 +10,7 @@ const Team = () => {
         </div>
         <div className="flex items-center justify-center gap-6 mt-16 sm:grid-cols-2 sm:space-y-0">
           <div
-            className={`bg-white dark:bg-teal-900 dark:text-white relative flex-1 flex items-stretch flex-col rounded-xl mt-6 sm:mt-0 max-w-xs`}
+            className={`bg-white shadow-xl dark:bg-teal-900 dark:text-white relative flex-1 flex items-stretch flex-col rounded-xl mt-6 sm:mt-0 max-w-xs`}
           >
             <Image
               className="object-cover mx-auto mt-4 rounded-full w-28 h-28"
