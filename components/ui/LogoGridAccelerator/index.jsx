@@ -6,11 +6,11 @@ import foundersbay from "../../../public/logos/foundersbay.svg";
 import foundersbayDark from "../../../public/logos/foundersbay-dark.svg";
 import seed from "../../../public/logos/seed.svg";
 import bergsteiger from "../../../public/logos/bergsteiger.png";
+import migrantAccelerator from "../../../public/logos/migrant-accelerator.png";
 import SectionWrapper from "../../SectionWrapper";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import InfiniteBanner, { useClock } from "../../InfiniteBanner";
 
 const logos = [
@@ -43,6 +43,12 @@ const logos = [
     src_dark: bergsteiger,
     alt: "bergsteiger",
     url: "https://accelerator-solingen.de/",
+  },
+  {
+    src: migrantAccelerator,
+    src_dark: migrantAccelerator,
+    alt: "migrant accelerator",
+    url: "https://www.themigrantaccelerator.com",
   },
 ];
 
