@@ -1,5 +1,6 @@
 import Image from "next/image";
 import GradientWrapper from "../../../GradientWrapper";
+import { InlineWidget } from "react-calendly";
 
 const Author = () => {
   return (
@@ -10,7 +11,7 @@ const Author = () => {
             About the Author
           </h1>
         </div>
-        <div className="flex items-center justify-center gap-6 mt-16 sm:grid-cols-2 sm:space-y-0">
+        <div className="flex flex-col items-center justify-center gap-6 mt-16 sm:grid-cols-2 sm:space-y-0">
           <div
             className={`bg-white shadow-xl dark:bg-teal-900 dark:text-white relative flex-1 flex items-stretch flex-col rounded-xl mt-6 sm:mt-0 max-w-md`}
           >
@@ -67,6 +68,12 @@ const Author = () => {
                 for us all.
               </p>
             </div>
+          </div>
+          <div className="w-full">
+            <InlineWidget
+              styles={{ height: "700px" }}
+              url="https://calendly.com/manaen/workshop"
+            />
           </div>
         </div>
       </section>
