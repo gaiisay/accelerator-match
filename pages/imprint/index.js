@@ -1,7 +1,5 @@
-import Head from "next/head";
-import Navbar from "../../components/ui/Navbar";
-import FooterCTA from "../../components/ui/FooterCTA";
-import Footer from "../../components/ui/Footer";
+import Navbar from "../../components/ui/standard/Navbar";
+import Footer from "../../components/ui/standard/Footer";
 
 export default function Imprint() {
   return (
