@@ -2,6 +2,8 @@ import Image from "next/image";
 import SectionWrapper from "../../../SectionWrapper";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import Link from "next/link";
+import Button from "../../Button";
+import NavLink from "../../standard/NavLink";
 
 const PurposeStory = () => (
   <SectionWrapper>
@@ -42,8 +44,7 @@ const PurposeStory = () => (
           to impress others – impress them with your achievements. If you are
           logged in into startupschool.org, you will notice that they offer you
           a weekly reflection tool that helps keep track of your goals and your
-          key metric. Here is a list of the KPIs they recommend to use as a key
-          metric or north star:{" "}
+          key metric.
         </p>
         <p className="mt-3 text-gray-500">
           I have been using startupschool's tool more or lees frequently.
@@ -247,26 +248,18 @@ const PurposeStory = () => (
           you are able to maintain a clear sense of purpose and are capable of
           realising it – even under odd conditions!
         </p>
-        <h3 className="mt-3 text-2xl font-extrabold sm:text-3xl">Links</h3>
         <div>
-          <Link
-            className="text-blue-500"
+          <h3 className="mt-3 text-xl font-extrabold sm:text-2xl">
+            Download Free Purpose Model Canvas
+          </h3>
+          <NavLink
             href="assets/purpose_canvas.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            download
+            className="inline-flex items-center mt-4 text-sm font-medium text-white bg-logo"
           >
-            The purpose canvas
-          </Link>
-          <Link
-            className="text-blue-500"
-            href="assets/purpose_canvas.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download
-          >
-            The purpose canvas
-          </Link>
+            Free PDF
+          </NavLink>
         </div>
       </div>
     </div>
