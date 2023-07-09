@@ -13,7 +13,7 @@ const FooterCTA = () => {
         </div>
         <div className="flex-none mt-4 md:mt-0">
           <NavLink
-            href="https://www.mypurpose.academy/"
+            href="https://calendly.com/manaen/workshop"
             target="_blank"
             className="inline-flex items-center mx-16 text-sm font-medium text-white gap-x-2 bg-logo"
           >

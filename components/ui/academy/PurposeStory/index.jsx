@@ -149,6 +149,16 @@ const PurposeStory = () => (
           down for you how the Purpose Framework helps you to impress others on
           your way to meaningful outcomes.
         </p>
+        <p>
+          <a
+            href="assets/purpose_canvas.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline"
+          >
+            Purpose Framework (free download)
+          </a>
+        </p>
         <div className="flex items-center justify-center w-full">
           <Image
             className="object-cover h-full mx-auto "
@@ -248,19 +258,6 @@ const PurposeStory = () => (
           you are able to maintain a clear sense of purpose and are capable of
           realising it – even under odd conditions!
         </p>
-        <div>
-          <h3 className="mt-3 text-xl font-extrabold sm:text-2xl">
-            Download Free Purpose Model Canvas
-          </h3>
-          <NavLink
-            href="assets/purpose_canvas.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center mt-4 text-sm font-medium text-white bg-logo"
-          >
-            Free PDF
-          </NavLink>
-        </div>
       </div>
     </div>
   </SectionWrapper>
