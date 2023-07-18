@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import NavHeader from "../NavHeader";
 import NavLink from "../NavLink";
-import { useRouter } from "next/router";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const Navbar = () => {
-  const { pathname } = useRouter();
   const [state, setState] = useState(false);
   const menuBtnEl = useRef();
 
@@ -18,15 +16,18 @@ const Navbar = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Tools", children: [{ name: "Academy", href: "/academy" }] },
+    {
+      name: "Tools",
+      children: [{ name: "Purpose Model Canvas", href: "/pmc" }],
+    },
   ];
 
-  useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
-      if (!menuBtnEl.current.contains(target)) setState(false);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.onclick = (e) => {
+  //     const target = e.target;
+  //     if (!menuBtnEl.current.contains(target)) setState(false);
+  //   };
+  // }, []);
 
   return (
     <header className="relative">
@@ -61,7 +62,7 @@ const Navbar = () => {
                       className="relative inline-block text-left"
                     >
                       <div>
-                        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md py-2 text-sm ">
+                        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md ">
                           Tools
                           <ChevronDownIcon
                             className="w-5 h-5 -mr-1 text-gray-400"
@@ -79,7 +80,7 @@ const Navbar = () => {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                       >
-                        <Menu.Items className="absolute right-0 z-10 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg dark:bg-teal-900 focus:outline-none">
+                        <Menu.Items className="absolute left-0 z-10 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg dark:bg-teal-900 focus:outline-none">
                           <div className="py-1">
                             {item.children.map((item, idx) => (
                               <Menu.Item key={idx}>
@@ -90,7 +91,7 @@ const Navbar = () => {
                                       active
                                         ? "dark:bg-teal-800 bg-slate-200"
                                         : "",
-                                      "block px-4 py-2 text-sm"
+                                      "block px-4 py-2"
                                     )}
                                   >
                                     {item.name}

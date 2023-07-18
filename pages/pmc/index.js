@@ -1,9 +1,9 @@
 import Navbar from "../../components/ui/standard/Navbar";
 import Footer from "../../components/ui/standard/Footer";
-import AcademyHero from "../../components/ui/academy/AcademyHero";
-import PurposeStory from "../../components/ui/academy/PurposeStory";
-import Author from "../../components/ui/academy/Author";
-import AcademyCTA from "../../components/ui/academy/AcademyCTA";
+import AcademyHero from "../../components/ui/pmc/AcademyHero";
+import PurposeStory from "../../components/ui/pmc/PurposeStory";
+import Author from "../../components/ui/pmc/Author";
+import AcademyCTA from "../../components/ui/pmc/AcademyCTA";
 
 export default function About() {
   return (

@@ -61,12 +61,12 @@ const FooterCTA = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col gap-4 mx-12 mt-2 text-justify lg:flex-row lg:text-left">
+          <div className="flex flex-col gap-4 mt-2 text-justify lg:mx-12 lg:flex-row lg:text-left">
             <div>
-              <h3 className="font-semibold">
+              <p>
                 Unlock Your Startup's Potential: The Purpose Framework for
                 Impressive Impact!
-              </h3>
+              </p>
               <p className="mt-5 lg:max-w-4xl">
                 Introducing the Purpose Framework and Purpose Index - your
                 secret weapons to captivate Venture Capital firms. Don't wait
