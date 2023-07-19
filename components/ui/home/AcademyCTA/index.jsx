@@ -97,7 +97,7 @@ const FooterCTA = () => {
         </div>
         <div className="flex-none mt-4 text-center md:mt-0">
           <NavLink
-            href="/academy"
+            href="/pmc"
             className="inline-flex items-center mx-16 text-sm font-medium text-white gap-x-2 bg-logo"
           >
             Learn more
