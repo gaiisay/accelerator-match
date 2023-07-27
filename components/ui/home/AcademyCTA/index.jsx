@@ -2,11 +2,12 @@ import SectionWrapper from "../../../SectionWrapper";
 import GradientWrapper from "../../../GradientWrapper";
 import NavLink from "../../standard/NavLink";
 import Image from "next/image";
+import { Mockup } from "../../standard/Mockup";
 
 const FooterCTA = () => {
   return (
     <GradientWrapper wrapperclassname="inset-0" className="custom-screen">
-      <div className="flex flex-col justify-between gap-4 custom-screen gap-x-12 sm:gap-8">
+      <div className="flex flex-col justify-between gap-4 gap-x-12 sm:gap-8">
         <div className="text-center ">
           <div className="max-w-4xl mx-auto space-y-5 text-center">
             <h1 className="mx-auto text-3xl font-extrabold sm:text-4xl">
@@ -61,7 +62,7 @@ const FooterCTA = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col gap-4 mt-2 text-justify lg:mx-12 lg:flex-row lg:text-left">
+          <div className="flex flex-col items-center justify-center w-full gap-12 mx-auto mt-2 text-justify md:gap-2 md:flex-row md:text-left">
             <div>
               <p>
                 Unlock Your Startup's Potential: The Purpose Framework for
@@ -84,15 +85,7 @@ const FooterCTA = () => {
                 purpose-driven dedication.
               </p>
             </div>
-            <div className="flex items-center justify-center w-full">
-              <Image
-                className="object-cover mx-auto"
-                src="/purpose_screen.png"
-                alt="image of laptop with screenshot"
-                width={450}
-                height={200}
-              />
-            </div>
+            <Mockup />
           </div>
         </div>
         <div className="flex-none mt-4 text-center md:mt-0">

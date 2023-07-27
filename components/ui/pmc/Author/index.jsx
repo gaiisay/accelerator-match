@@ -23,7 +23,9 @@ const Author = () => {
               height={100}
             />
             <div className="p-4 space-y-2 sm:text-center">
-              <div className="mb-4 text-3xl font-semibold ">Mana</div>
+              <div className="mb-4 text-3xl font-semibold text-center">
+                Mana
+              </div>
               <span className="font-medium text-indigo-600 dark:text-indigo-400 ">
                 Founder & CEO @ mypurpose academy
               </span>

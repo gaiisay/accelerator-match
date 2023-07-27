@@ -4,6 +4,7 @@ import { TwitterTweetEmbed } from "react-twitter-embed";
 import Link from "next/link";
 import Button from "../../Button";
 import NavLink from "../../standard/NavLink";
+import { Mockup } from "../../standard/Mockup";
 
 const PurposeStory = () => (
   <SectionWrapper>
@@ -159,15 +160,14 @@ const PurposeStory = () => (
             Purpose Framework (free download)
           </a>
         </p>
-        <div className="flex items-center justify-center w-full">
-          <Image
+        <Mockup />
+        {/* <Image
             className="object-cover h-full mx-auto "
             src="/purpose_screen.png"
             alt="image of laptop with screenshot"
             width={700}
             height={700}
-          />
-        </div>
+          /> */}
         <h3 className="mt-3 text-3xl font-extrabold sm:text-4xl">
           Impress with vision{" "}
         </h3>
