@@ -7,6 +7,7 @@ import foundersbayDark from "../../../../public/logos/foundersbay-dark.svg";
 import seed from "../../../../public/logos/seed.svg";
 import bergsteiger from "../../../../public/logos/bergsteiger.png";
 import migrantAccelerator from "../../../../public/logos/migrant-accelerator.png";
+import gateway49 from "../../../../public/logos/gateway49.jpg";
 import SectionWrapper from "../../../SectionWrapper";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -49,6 +50,12 @@ const logos = [
     src_dark: migrantAccelerator,
     alt: "migrant accelerator",
     url: "https://www.themigrantaccelerator.com",
+  },
+  {
+    src: gateway49,
+    src_dark: gateway49,
+    alt: "gateway 49",
+    url: "https://www.gateway49.com/",
   },
 ];
 
