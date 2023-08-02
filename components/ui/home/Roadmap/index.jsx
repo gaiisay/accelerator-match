@@ -23,7 +23,7 @@ export default function Roadmap() {
               fontSize={{ xs: "0.8rem", sm: "1rem" }}
               mr={2}
             >
-              Q1 / 2023
+              Q3 / 2023
             </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -70,7 +70,7 @@ export default function Roadmap() {
               fontSize={{ xs: "0.8rem", sm: "1rem" }}
               ml={2}
             >
-              Q2 / 2023
+              Q4 / 2023
             </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -124,7 +124,7 @@ export default function Roadmap() {
               fontSize={{ xs: "0.8rem", sm: "1rem" }}
               mr={2}
             >
-              Q3 / 2023
+              Q1 / 2024
             </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -171,7 +171,7 @@ export default function Roadmap() {
               fontSize={{ xs: "0.8rem", sm: "1rem" }}
               ml={2}
             >
-              Q4 / 2023
+              Q2 / 2024
             </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -218,7 +218,7 @@ export default function Roadmap() {
               fontSize={{ xs: "0.8rem", sm: "1rem" }}
               ml={2}
             >
-              Q1 / 2024
+              Q3 / 2024
             </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
